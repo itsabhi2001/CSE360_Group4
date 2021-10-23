@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="187.0" layoutY="118.0" />
+      <TextField layoutX="187.0" layoutY="166.0" />
+      <Button layoutX="267.0" layoutY="218.0" mnemonicParsing="false" text="Log In" />
+      <Text layoutX="112.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <Text layoutX="113.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Text fill="#2e5ec6" layoutX="66.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Patient Portal">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

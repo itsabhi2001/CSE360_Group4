@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Patient Page">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="468.0" layoutY="23.0" mnemonicParsing="false" text="Patient Profile" />
+                  <Button layoutX="103.0" layoutY="23.0" mnemonicParsing="false" text="New Visit" />
+                  <Text layoutX="388.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Het Vasoya:" />
+                  <ScrollPane layoutX="23.0" layoutY="80.0" prefHeight="221.0" prefWidth="538.0">
+                     <content>
+                        <Pane prefHeight="243.0" prefWidth="482.0">
+                           <children>
+                              <VBox prefHeight="259.0" prefWidth="522.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField prefHeight="100.0" prefWidth="55.0" text="Visit 5" />
+                                          <VBox prefHeight="100.0" prefWidth="129.0">
+                                             <children>
+                                                <TextField text="Vitals" />
+                                                <TextArea prefHeight="200.0" prefWidth="200.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="100.0" prefWidth="184.0">
+                                             <children>
+                                                <TextField text="Notes" />
+                                                <TextArea prefHeight="200.0" prefWidth="200.0" text="&#10;" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="100.0" prefWidth="157.0">
+                                             <children>
+                                                <TextField text="Prescription" />
+                                                <TextArea prefHeight="200.0" prefWidth="200.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField prefHeight="100.0" prefWidth="55.0" text="Visit 4" />
+                                          <VBox prefHeight="100.0" prefWidth="129.0">
+                                             <children>
+                                                <TextField text="Vitals" />
+                                                <TextArea prefHeight="200.0" prefWidth="200.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="100.0" prefWidth="184.0">
+                                             <children>
+                                                <TextField text="Notes" />
+                                                <TextArea prefHeight="200.0" prefWidth="200.0" text="&#10;" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="100.0" prefWidth="157.0">
+                                             <children>
+                                                <TextField text="Prescription" />
+                                                <TextArea prefHeight="200.0" prefWidth="200.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField prefHeight="100.0" prefWidth="55.0" text="Visit 5" />
+                                          <VBox prefHeight="100.0" prefWidth="129.0">
+                                             <children>
+                                                <TextField text="Vitals" />
+                                                <TextArea prefHeight="200.0" prefWidth="200.0" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="100.0" prefWidth="184.0">
+                                             <children>
+                                                <TextField text="Notes" />
+                                                <TextArea prefHeight="200.0" prefWidth="200.0" text="&#10;" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="100.0" prefWidth="157.0">
+                                             <children>
+                                                <TextField text="Prescription" />
+                                                <TextArea prefHeight="200.0" prefWidth="200.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Pane>
+                     </content>
+                  </ScrollPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
