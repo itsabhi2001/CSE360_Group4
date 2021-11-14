@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.phase3.PatientVitalsDoctorController">
+   <children>
+      <Label layoutX="76.0" layoutY="171.0" text="Weight" />
+      <Label layoutX="76.0" layoutY="123.0" text="Height" />
+      <Label layoutX="27.0" layoutY="321.0" text="Prescription" />
+      <Label layoutX="76.0" layoutY="214.0" text="Temperature" />
+      <Label layoutX="391.0" layoutY="71.0" text="Notes" />
+      <Label layoutX="76.0" layoutY="255.0" text="Blood Pressure" />
+      <Label layoutX="55.0" layoutY="44.0" text="Patient Vitals">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="height" layoutX="147.0" layoutY="123.0" prefHeight="27.0" prefWidth="143.0" />
+      <Label fx:id="weight" layoutX="147.0" layoutY="171.0" prefHeight="27.0" prefWidth="143.0" />
+      <Label fx:id="temperature" layoutX="195.0" layoutY="214.0" prefHeight="27.0" prefWidth="143.0" />
+      <Label fx:id="pressure" layoutX="201.0" layoutY="255.0" prefHeight="27.0" prefWidth="143.0" />
+      <Label fx:id="prescription" layoutX="34.0" layoutY="354.0" prefHeight="159.0" prefWidth="612.0" />
+      <Label fx:id="notes" layoutX="451.0" layoutY="71.0" prefHeight="241.0" prefWidth="225.0" />
+      <Button layoutX="607.0" layoutY="14.0" mnemonicParsing="false" onAction="#Load_OnClick" text="Load" />
+   </children>
+</AnchorPane>
