@@ -17,6 +17,9 @@ import java.sql.*;
 
 public class PatientLoginController {
 
+    public String userNameGlobal;
+    public String patientIDGlobal;
+
     @FXML
     private Stage stage;
     private Scene scene;
@@ -36,7 +39,7 @@ public class PatientLoginController {
         Connection connection = connectionClass.getConnection();
 
         //String sql = "INSERT INTO patientlogin VALUES('b', 'b', '1')";
-        String sql = "select count(1) from patientlogin where userName = '" + userField + "' AND password = '" + passwordField + "'";
+        String sql = "select count(1), patientID, userName from patientlogin where userName = '" + userField + "' AND password = '" + passwordField + "'";
         Statement statement = connection.createStatement();
         //statement.executeUpdate(sql);
         ResultSet queryResult = statement.executeQuery(sql);
@@ -45,6 +48,8 @@ public class PatientLoginController {
         {
             while (queryResult.next()) {
                 if(queryResult.getInt(1) == 1) {
+                    patientIDGlobal = String.valueOf(queryResult.getInt(2));
+                    userNameGlobal = String.valueOf(queryResult.getString(3));
                     root = FXMLLoader.load(getClass().getResource("patientPortal.fxml"));
                     stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     scene = new Scene(root);
@@ -53,7 +58,6 @@ public class PatientLoginController {
                 }
                 else {
                     messageText.setText("Wrong Credentials");
-                    System.out.println("Wroing user name and password!");
                 }
             }
         } catch (Exception e) {
@@ -64,6 +68,14 @@ public class PatientLoginController {
 
     public void RegisterHere_OnClick(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("RegisterPage.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void StaffLogin_OnClick(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("StaffLogin.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
