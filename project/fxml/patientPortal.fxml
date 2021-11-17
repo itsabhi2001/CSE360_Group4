@@ -12,10 +12,10 @@
       <Button layoutX="444.0" layoutY="54.0" mnemonicParsing="false" onAction="#LoadMessages_OnClick" text="Load Messages" />
       <TextArea fx:id="messageArea" layoutX="365.0" layoutY="86.0" prefHeight="285.0" prefWidth="200.0" />
       <Label layoutX="365.0" layoutY="58.0" text="Messages" />
-      <Button layoutX="46.0" layoutY="94.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="164.0" text="View Personal Information" />
+      <Button layoutX="46.0" layoutY="94.0" mnemonicParsing="false" onAction="#ContactInformation_OnClick" prefHeight="25.0" prefWidth="164.0" text="View Personal Information" />
       <Button layoutX="46.0" layoutY="216.0" mnemonicParsing="false" onAction="#LoadPrescription_OnClick" text="View My Prescription" />
       <TextArea fx:id="prescriptionArea" layoutX="46.0" layoutY="250.0" prefHeight="136.0" prefWidth="301.0" />
-      <Button layoutX="46.0" layoutY="154.0" mnemonicParsing="false" text="Send Message to Doctor" />
+      <Button layoutX="46.0" layoutY="154.0" mnemonicParsing="false" onAction="#patientPortal_OnClick" text="Send Message to Doctor" />
       <Label layoutX="235.0" layoutY="20.0" prefHeight="34.0" prefWidth="156.0" text="Patient Portal">
          <font>
             <Font size="23.0" />

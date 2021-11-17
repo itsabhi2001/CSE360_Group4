@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
@@ -21,6 +22,11 @@ public class PatientPortalController {
     private TextArea messageArea;
     @FXML
     private TextArea prescriptionArea;
+
+    @FXML
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
 
 
     public void LoadMessages_OnClick(ActionEvent event) throws IOException, SQLException {
@@ -69,5 +75,21 @@ public class PatientPortalController {
             e.getCause();
         }
         prescriptionArea.setText(output);
+    }
+
+    public void ContactInformation_OnClick(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("ContactInformation.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void patientPortal_OnClick(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("MessageToDoctor.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }
