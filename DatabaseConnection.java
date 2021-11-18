@@ -1,4 +1,4 @@
-package com.example.javafx;
+package com.example.mentcare4;
 
 import java.sql.Connection;
 import java.sql.Driver;
@@ -11,7 +11,7 @@ public class DatabaseConnection {
         String databaseName = "mentcare";
         String databaseUser = "ra";
         String databasePassword = "ra";
-        String url = "jdbc:mysql://192.168.64.2/" + databaseName;
+        String url = "jdbc:mysql://localhost/" + databaseName;
 
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
