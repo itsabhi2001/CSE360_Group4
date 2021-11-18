@@ -12,7 +12,7 @@ public class PatientLogin extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("PatientLogin.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 500, 400);
-        stage.setTitle("Mentcare Group 4");
+        stage.setTitle("Group 4 Mentcare");
         stage.setScene(scene);
         stage.show();
     }
