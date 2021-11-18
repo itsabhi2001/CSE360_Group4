@@ -35,20 +35,18 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mentcare4.MessageToPatientController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mentcare4.MessageToDoctorController">
    <children>
       <Button layoutX="360.0" layoutY="37.0" mnemonicParsing="false" onAction="#Back_OnClick" text="Back" />
-      <TextArea fx:id="messageAreaP" layoutX="35.0" layoutY="97.0" prefHeight="200.0" prefWidth="366.0" />
-      <Button layoutX="201.0" layoutY="308.0" mnemonicParsing="false" onAction="#Send_OnClick" text="Send" />
-      <Label layoutX="35.0" layoutY="33.0" text="Message to Patient">
+      <TextArea fx:id="messageArea" layoutX="35.0" layoutY="97.0" prefHeight="200.0" prefWidth="366.0" />
+      <Button layoutX="191.0" layoutY="308.0" mnemonicParsing="false" onAction="#Submit_OnClick" text="Submit" />
+      <Label layoutX="35.0" layoutY="33.0" text="Message to Doctor">
          <font>
             <Font size="23.0" />
          </font>
       </Label>
-      <TextField fx:id="patientName" layoutX="35.0" layoutY="67.0" promptText="Patient Name" />
    </children>
 </Pane>
