@@ -64,7 +64,7 @@ public class DoctorDashboardController {
         try
         {
             while (queryResult.next()) {
-                output = output + "Date: " + String.valueOf(queryResult.getString(1)) + "  -  Patient: " + String.valueOf(queryResult.getString(2)) + "\n";
+                output = output + "Date: " + String.valueOf(queryResult.getString(1)) + " | Patient: " + String.valueOf(queryResult.getString(2)) + "\n";
             }
         } catch (Exception e) {
             appointmentList.setText("No Appointments!");
@@ -86,7 +86,7 @@ public class DoctorDashboardController {
         try
         {
             while (queryResult.next()) {
-                output = output + "Patient Name: " + String.valueOf(queryResult.getString(2)) + " - " + String.valueOf(queryResult.getString(1)) + "\n";
+                output = output + "Patient Name: " + String.valueOf(queryResult.getString(2)) + "  |  " + String.valueOf(queryResult.getString(1)) + "\n";
             }
         } catch (Exception e) {
             messages.setText("No Messages!");
